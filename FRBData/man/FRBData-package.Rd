@@ -3,41 +3,30 @@
 \alias{FRBData}
 \docType{package}
 \title{
-What the package does (short line)
-~~ package title ~~
+FRBData: download financial data from FRB's website
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+This package provide functions which can get financial and economical data from 
+FRB's website.(http://www.federalreserve.gov)
 }
 \details{
 \tabular{ll}{
 Package: \tab FRBData\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 0.1\cr
 Date: \tab 2011-04-18\cr
-License: \tab What license is it under?\cr
+License: \tab BSD\cr
 LazyLoad: \tab yes\cr
 }
-~~ An overview of how to use the package, including the most important ~~
-~~ functions ~~
+Easily download financial data from FRB's website.Especially, 
+the functions which import interest rate are implemented at this time.
+In the future, other financial and economic data such as consumer credit and industrial production
+will be available.
 }
 \author{
-Who wrote it
-
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
-}
-\references{
-~~ Literature or other references for background information ~~
-}
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in ~~
-~~ the R documentation directory ~~
-\keyword{ package }
-\seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+Shinichi Takayanagi
+Maintainer: Shinichi Takayanagi<teramonagi@gmail.com>
 }
 \examples{
-~~ simple examples of the most important functions ~~
+
 }

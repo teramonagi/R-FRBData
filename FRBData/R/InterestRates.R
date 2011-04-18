@@ -1,4 +1,3 @@
-library(xts)
 DownLoadData <- function(rel ,series, lastObs = "", from = "", to = ""){
   base     <- "http://www.federalreserve.gov/datadownload/Output.aspx?"
   rel      <- paste("rel=", rel, "&", sep = "")
@@ -59,12 +58,12 @@ GetFFRate <- function(lastObs = "", from = "", to = ""){
 }
 
 
-
-x <- GetTreasuryRate(lastObs=10)
-y <- GetSwapRate()
-z <- GetTIPSRate()
-xx <- GetFFRate(lastObs=10)
-DownLoadData(
-  rel="H15",
-  series="bf17364827e38702b42a58cf8eaa3f78",
-)
+#setwd("C:/Documents and Settings/Administrator/My Documents/My Dropbox/code/R/FRBData/FRBData")
+#x <- GetTreasuryRate(lastObs=10)
+#y <- GetSwapRate()
+#z <- GetTIPSRate()
+#xx <- GetFFRate(lastObs=10)
+#DownLoadData(
+#  rel="H15",
+#  series="bf17364827e38702b42a58cf8eaa3f78",
+#)

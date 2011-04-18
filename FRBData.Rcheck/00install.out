@@ -1,0 +1,14 @@
+* install options are ' --no-html'
+
+* installing *source* package 'FRBData' ...
+** R
+** data
+ 警告：  'data' ディレクトリが空です  
+** preparing package for lazy loading
+Loading required package: zoo
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (FRBData)

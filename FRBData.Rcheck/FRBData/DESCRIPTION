@@ -5,7 +5,10 @@ Version: 0.1
 Date: 2011-04-18
 Author: Shinichi Takayanagi
 Maintainer: Shinichi Takayanagi<teramonagi@gmail.com>
-Description: This package provide functions which can get financial and economical data from FRB's website.(http://www.federalreserve.gov)
+Description: This package provide functions which can get financial and
+        economical data from FRB's
+        website.(http://www.federalreserve.gov)
 License: BSD
 LazyLoad: yes
 Depends: xts
+Built: R 2.11.1; ; 2011-04-18 15:12:12 UTC; windows
