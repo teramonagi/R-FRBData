@@ -19,7 +19,8 @@ CheckArguments <- function(lastObs = "", from = "", to = ""){
     stop("you must specify both 'from' and 'to'")
   }
 }
-GetRate <- function(series, col.name, lastObs = "", from = "", to = ""){
+GetRate <- function(series, col.name, lastObs = 0, from = "", to = ""){
+  lastObs <- ifelse(lastObs <= 0 , "", as.character(lastObs))
   CheckArguments(lastObs, from, to)
 
   rel    <- "H15"
@@ -36,34 +37,23 @@ GetRate <- function(series, col.name, lastObs = "", from = "", to = ""){
   colnames(rate) <- c("DATE",col.name)  
   as.xts(read.zoo((rate)))
 }
-GetTreasuryRate <- function(lastObs = "", from = "", to = ""){
+GetTreasuryRate <- function(lastObs = 0, from = "", to = ""){
   series   <- "bf17364827e38702b42a58cf8eaa3f78"
   col.name <- c("1M","3M","6M","1Y","2Y","3Y","5Y","7Y","10Y","20Y","30Y")
   GetRate(series = series,col.name = col.name, lastObs = lastObs, from = from, to = to)
 }
-GetSwapRate <- function(lastObs = "", from = "", to = ""){  
+GetSwapRate <- function(lastObs = 0, from = "", to = ""){  
   series   <- "7fbf8fc65ad44431bf467b3b7eef6bf2"
   col.name <- c("1Y","2Y","3Y","4Y","5Y","7Y","10Y","30Y")
   GetRate(series = series,col.name = col.name, lastObs = lastObs, from = from, to = to)
 }
-GetTIPSRate <- function(lastObs = "", from = "", to = ""){  
+GetTIPSRate <- function(lastObs = 0, from = "", to = ""){  
   series   <- "a5efc8cebeae2f178010054da08cb1f1"
   col.name <- c("5Y","7Y","10Y","20Y","30Y")
   GetRate(series = series,col.name = col.name, lastObs = lastObs, from = from, to = to)
 }
-GetFFRate <- function(lastObs = "", from = "", to = ""){  
+GetFFRate <- function(lastObs = 0, from = "", to = ""){  
   series   <- "c5025f4bbbed155a6f17c587772ed69e"
   col.name <- c("Rate")
   GetRate(series = series,col.name = col.name, lastObs = lastObs, from = from, to = to)
 }
-
-
-#setwd("C:/Documents and Settings/Administrator/My Documents/My Dropbox/code/R/FRBData/FRBData")
-#x <- GetTreasuryRate(lastObs=10)
-#y <- GetSwapRate()
-#z <- GetTIPSRate()
-#xx <- GetFFRate(lastObs=10)
-#DownLoadData(
-#  rel="H15",
-#  series="bf17364827e38702b42a58cf8eaa3f78",
-#)

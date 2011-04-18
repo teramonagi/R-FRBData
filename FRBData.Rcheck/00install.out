@@ -2,8 +2,6 @@
 
 * installing *source* package 'FRBData' ...
 ** R
-** data
- 警告：  'data' ディレクトリが空です  
 ** preparing package for lazy loading
 Loading required package: zoo
 ** help
