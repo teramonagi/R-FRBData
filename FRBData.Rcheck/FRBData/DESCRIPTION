@@ -1,14 +1,14 @@
 Package: FRBData
 Type: Package
-Title: download financial data from FRB's website
+Title: Download financial data from FRB's website
 Version: 0.1
 Date: 2011-04-18
 Author: Shinichi Takayanagi
 Maintainer: Shinichi Takayanagi<teramonagi@gmail.com>
-Description: This package provide functions which can get financial and
-        economical data from FRB's
+Description: This package provides functions which can get financial
+        and economical data from FRB's
         website.(http://www.federalreserve.gov)
 License: BSD
 LazyLoad: yes
 Depends: xts
-Built: R 2.11.1; ; 2011-04-18 15:59:01 UTC; windows
+Built: R 2.11.1; ; 2011-04-19 10:14:10 UTC; windows

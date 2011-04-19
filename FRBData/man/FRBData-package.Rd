@@ -3,7 +3,7 @@
 \alias{FRBData}
 \docType{package}
 \title{
-FRBData: download financial data from FRB's website
+FRBData: Download financial data from FRB's website
 }
 \description{
 This package provide functions which can get financial and economical data from 
@@ -20,13 +20,11 @@ LazyLoad: \tab yes\cr
 }
 Easily download financial data from FRB's website.Especially, 
 the functions which import interest rate are implemented at this time.
-In the future, other financial and economic data such as consumer credit and industrial production
-will be available.
+In the future, other financial and economic data such as consumer credit and industrial production will be available.
 }
 \author{
-Shinichi Takayanagi
-Maintainer: Shinichi Takayanagi<teramonagi@gmail.com>
+Shinichi Takayanagi<teramonagi@gmail.com>
 }
 \examples{
-
+GetTreasuryRate(lastObs = 30)
 }

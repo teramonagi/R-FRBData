@@ -27,34 +27,11 @@
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... OK
-* checking Rd files ... NOTE
-prepare_Rd: FRBData-package.Rd:30-32: Dropping empty section \examples
+* checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd cross-references ... OK
 * checking for missing documentation entries ... OK
-* checking for code/documentation mismatches ... WARNING
-Codoc mismatches from documentation object 'GetRate':
-GetRate
-  Code: function(series, col.name, lastObs = 0, from = "", to = "")
-  Docs: function(series = "c5025f4bbbed155a6f17c587772ed69e", col.name
-                 = "Rate", lastObs = 30)
-  Argument names in code not in docs:
-    from to
-  Mismatches in argument default values:
-    Name: 'series' Code:  Docs: "c5025f4bbbed155a6f17c587772ed69e"
-    Name: 'col.name' Code:  Docs: "Rate"
-    Name: 'lastObs' Code: 0 Docs: 30
-
-* checking Rd \usage sections ... WARNING
-Undocumented arguments in documentation object 'GetRate'
-  series col.name lastObs
-Documented arguments not in \usage in documentation object 'GetRate':
-  lastObg from to
-
-Functions with \usage entries need to have the appropriate \alias entries,
-and all their arguments documented.
-The \usage entries must correspond to syntactically valid R code.
-See the chapter 'Writing R documentation files' in manual 'Writing R
-Extensions'.
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking examples ... OK

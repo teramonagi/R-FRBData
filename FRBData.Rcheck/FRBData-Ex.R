@@ -6,6 +6,22 @@ library('FRBData')
 
 assign(".oldSearch", search(), pos = 'CheckExEnv')
 cleanEx()
+nameEx("FRBData-package")
+### * FRBData-package
+
+flush(stderr()); flush(stdout())
+
+### Name: FRBData-package
+### Title: FRBData: Download financial data from FRB's website
+### Aliases: FRBData-package FRBData
+
+### ** Examples
+
+GetTreasuryRate(lastObs = 30)
+
+
+
+cleanEx()
 nameEx("GetRate")
 ### * GetRate
 
@@ -25,7 +41,7 @@ GetTIPSRate(from = "04/01/2011", to = "04/15/2011")
 GetFFRate(lastObs=20)
 #not recommend
 GetRate(series = "c5025f4bbbed155a6f17c587772ed69e",
-  col.name = "Rate", lastObs = 30,)
+  col.name = "Rate", lastObs = 30)
 
 
 
