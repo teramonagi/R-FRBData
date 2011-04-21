@@ -1,3 +1,3 @@
 FRBData-package         FRBData: Download financial data from FRB's
                         website
-GetRate                 download interest rate
+GetInterestRates        download interest rate

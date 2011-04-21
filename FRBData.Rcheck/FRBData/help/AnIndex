@@ -1,7 +1,3 @@
 FRBData-package	FRBData-package
 FRBData	FRBData-package
-GetFFRate	GetRate
-GetRate	GetRate
-GetSwapRate	GetRate
-GetTIPSRate	GetRate
-GetTreasuryRate	GetRate
+GetInterestRates	GetInterestRates

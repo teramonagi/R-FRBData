@@ -26,5 +26,6 @@ In the future, other financial and economic data such as consumer credit and ind
 Shinichi Takayanagi<teramonagi@gmail.com>
 }
 \examples{
-GetTreasuryRate(lastObs = 30)
+#Treasury rate
+GetInterestRates("TCMNOM",lastObs = 10)
 }

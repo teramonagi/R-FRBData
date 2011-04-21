@@ -11,4 +11,4 @@ Description: This package provides functions which can get financial
 License: BSD
 LazyLoad: yes
 Depends: xts
-Built: R 2.11.1; ; 2011-04-19 10:14:10 UTC; windows
+Built: R 2.11.1; ; 2011-04-21 16:00:33 UTC; windows

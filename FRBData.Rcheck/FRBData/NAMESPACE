@@ -1,5 +1,1 @@
-export(GetRate,
-       GetTreasuryRate,
-       GetSwapRate,
-       GetTIPSRate,
-       GetFFRate)
+export(GetInterestRates)

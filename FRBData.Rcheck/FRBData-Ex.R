@@ -17,31 +17,28 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-GetTreasuryRate(lastObs = 30)
+#Treasury rate
+GetInterestRates("TCMNOM",lastObs = 10)
 
 
 
 cleanEx()
-nameEx("GetRate")
-### * GetRate
+nameEx("GetInterestRates")
+### * GetInterestRates
 
 flush(stderr()); flush(stdout())
 
-### Name: GetRate
+### Name: GetInterestRates
 ### Title: download interest rate
-### Aliases: GetRate GetTreasuryRate GetSwapRate GetTIPSRate GetFFRate
+### Aliases: GetInterestRates
 ### Keywords: utilities
 
 ### ** Examples
 
-#Treasury,Swap,TIPS,Fedral rate,
-GetTreasuryRate(lastObs = 10)
-GetSwapRate(from = "04/01/2011", to = "04/15/2011")
-GetTIPSRate(from = "04/01/2011", to = "04/15/2011")
-GetFFRate(lastObs=20)
-#not recommend
-GetRate(series = "c5025f4bbbed155a6f17c587772ed69e",
-  col.name = "Rate", lastObs = 30)
+#Treasury rate
+GetInterestRates("TCMNOM",lastObs = 10)
+#Swap
+GetInterestRates("SWAPS",from = "04/11/2011", to = "04/19/2011")
 
 
 
