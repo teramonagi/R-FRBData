@@ -61,7 +61,7 @@ Loading required package: zoo
 > flush(stderr()); flush(stdout())
 > 
 > ### Name: GetInterestRates
-> ### Title: download interest rate
+> ### Title: Download various interest rate
 > ### Aliases: GetInterestRates
 > ### Keywords: utilities
 > 
@@ -96,7 +96,7 @@ Loading required package: zoo
 > ### * <FOOTER>
 > ###
 > cat("Time elapsed: ", proc.time() - get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  1.05 0.06 2.71 NA NA 
+Time elapsed:  1.01 0.08 2.7 NA NA 
 > grDevices::dev.off()
 null device 
           1 

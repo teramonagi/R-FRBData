@@ -14,7 +14,10 @@
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... OK
 * checking index information ... OK
-* checking package subdirectories ... OK
+* checking package subdirectories ... WARNING
+Found the following directory(s) with names of check directories:
+  FRBData.Rcheck
+Most likely, these were included erroneously.
 * checking R files for non-ASCII characters ... OK
 * checking R files for syntax errors ... OK
 * checking whether the package can be loaded ... OK

@@ -29,7 +29,7 @@ nameEx("GetInterestRates")
 flush(stderr()); flush(stdout())
 
 ### Name: GetInterestRates
-### Title: download interest rate
+### Title: Download various interest rate
 ### Aliases: GetInterestRates
 ### Keywords: utilities
 
