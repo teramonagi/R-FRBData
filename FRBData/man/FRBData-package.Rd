@@ -12,8 +12,8 @@ This package provide functions which can get financial and economical data from 
 \tabular{ll}{
 Package: \tab FRBData\cr
 Type: \tab Package\cr
-Version: \tab 0.1\cr
-Date: \tab 2011-04-20\cr
+Version: \tab 0.2\cr
+Date: \tab 2011-04-24\cr
 License: \tab BSD\cr
 LazyLoad: \tab yes\cr
 }

@@ -19,9 +19,12 @@ ID <- list(
   MORTG  = list(SERIES = "735a17440929c2d1c1291317cdfeffc0", COL_NAME = c("RATE"))
 )
 #APIs
-GetInterestRates <- function(id, lastObs = 0, from = "", to = ""){
-  lastObs <- ifelse(lastObs <= 0 , "", as.character(lastObs))
+GetInterestRates <- function(id, lastObs = 0, from = NULL, to = NULL){
   CheckArguments(lastObs, from, to)
+  lastObs <- ifelse(lastObs <= 0 , "", as.character(lastObs))
+  from    <- ifelse(is.null(from), "", format(from, "%m/%d/%Y"))
+  to      <- ifelse(is.null(to)  , "", format(to,   "%m/%d/%Y"))
+
 
   rate <- DownLoadData(rel = "H15", series = ID[[id]]$SERIES, lastObs = lastObs, from = from, to = to)[-1,]
   rate <- subset(rate, rate[,2] != "ND")
@@ -50,11 +53,11 @@ DownLoadData <- function(rel ,series, lastObs = "", from = "", to = ""){
   query    <- paste(base, rel, series, lastObs, from, to, filetype, label,layout,sep="")  
   return(read.csv(query, stringsAsFactors=FALSE))
 }
-CheckArguments <- function(lastObs = "", from = "", to = ""){
-  if(lastObs != "" && (from != "" || to != "")){
+CheckArguments <- function(lastObs, from, to){
+  if(lastObs != 0 && (!is.null(from) || !is.null(to))){
     stop("one of 'lastObs' and date should be specified")
   }
-  if((from != "" && to == "") || (from == "" && to != "")){
+  if((!is.null(from) && is.null(to)) || (is.null(from) && !is.null(to))){
     stop("you must specify both 'from' and 'to'")
   }
 }

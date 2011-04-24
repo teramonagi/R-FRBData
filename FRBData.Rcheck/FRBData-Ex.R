@@ -31,14 +31,13 @@ flush(stderr()); flush(stdout())
 ### Name: GetInterestRates
 ### Title: Download various interest rate
 ### Aliases: GetInterestRates
-### Keywords: utilities
 
 ### ** Examples
 
 #Treasury rate
 GetInterestRates("TCMNOM",lastObs = 10)
-#Swap
-GetInterestRates("SWAPS",from = "04/11/2011", to = "04/19/2011")
+#Swap rate
+GetInterestRates("SWAPS",from = as.Date("2011/04/11"), to = as.Date("2011/04/19"))
 
 
 
