@@ -25,8 +25,10 @@ GetInterestRates <- function(id, lastObs = 0, from = NULL, to = NULL){
   from    <- ifelse(is.null(from), "", format(from, "%m/%d/%Y"))
   to      <- ifelse(is.null(to)  , "", format(to,   "%m/%d/%Y"))
 
-
-  rate <- DownLoadData(rel = "H15", series = ID[[id]]$SERIES, lastObs = lastObs, from = from, to = to)[-1,]
+  try(rate <- DownLoadData(rel = "H15", series = ID[[id]]$SERIES, lastObs = lastObs, from = from, to = to)[-1,], TRUE)
+  if( !exists("rate") || !is.data.frame(rate) || (ncol(rate) == 1)){
+    return(NULL)
+  }
   rate <- subset(rate, rate[,2] != "ND")
   warn.old <- getOption("warn")
   options(warn = -1)

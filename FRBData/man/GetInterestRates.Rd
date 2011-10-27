@@ -38,7 +38,7 @@ Download various interest rate. GetInterestRates function is only API function. 
 \value{
 An object of class xts.
 }
-\author{Shinichi Takayanagi<teramonagi@gmail.com>}
+\author{Shinichi Takayanagi}
 \examples{
 #Treasury rate
 GetInterestRates("TCMNOM",lastObs = 10)
